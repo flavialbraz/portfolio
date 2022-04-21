@@ -220,19 +220,19 @@ header {
 
 .image-card .viewmore {
 	position: relative;
-	bottom: -100px;
+	bottom: -109px;
 	left: 0px;
 	opacity: 0;
-	padding: 1rem 1rem;
-	min-width: 44%;
-	margin: 8px 22px;
+	padding: 0.8rem 0.8rem;
+	min-width: 31%;
+	margin: 10px -5px 8px 23px;
 	font-size: .8rem;
 	font-weight: 500;
 }
 
 .card:hover .image-card .viewmore {
 	opacity: 1;
-	bottom: 0px;
+	bottom: 100px;
 }
 
 .who {
