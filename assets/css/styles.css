@@ -302,7 +302,7 @@ button.btn:hover {
 	z-index: 111;
 	padding-top: 4rem;
 	padding-left: 2rem;
-	width: 461px;
+	width: 72%;
 }
 
 .image-card .viewmore:hover {
@@ -319,7 +319,7 @@ button.btn:hover {
 	content: "";
 	position: absolute;
 	left: 0px;
-	height: 599px;
+	height: 627px;
 	width: 100%;
 }
 
