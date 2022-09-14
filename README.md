@@ -1,2 +1,3 @@
 # Portfolio
-Acesse online: https://flavialbraz.github.io/Portfolio/index.html
+- Em desenvolvimento
+- Acesse online: https://flavialbraz.github.io/portfolio/
