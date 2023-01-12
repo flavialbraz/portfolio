@@ -84,7 +84,7 @@ button.btn {
 	padding: 1.3rem 3rem;
 	background: var(--main-color);
 	color: #fff;
-	font-family: Montserrat;
+	font-family: Montserrat, sans-serif;
 	border-radius: 6px;
 	min-width: 81%;
 	font-size: .90rem;
@@ -110,7 +110,7 @@ header {
 }
 
 .tecs img {
-	opacity: 0.1;
+	opacity: 0.3;
 	cursor: -webkit-grab;
 	width: 50px;
 }
@@ -155,7 +155,7 @@ header {
 
 .social-m img {
 	margin: 0rem 1rem 0rem 0rem;
-	opacity: 0.2;
+	opacity: 0.3;
 }
 
 .social-m img:hover {
@@ -182,9 +182,10 @@ header {
 	width: 32%;
 	border: 1px solid #9d22db30;
 	border-radius: 5px;
-	margin-bottom: 2rem;
+	margin-bottom: 0rem;
 	position: relative;
 	z-index: 1;
+	background: #16041e52;
 }
 
 .image-card {
@@ -224,8 +225,8 @@ header {
 	left: 0px;
 	opacity: 0;
 	padding: 0.8rem 0.8rem;
-	min-width: 31%;
-	margin: 10px -5px 8px 23px;
+	min-width: 25%;
+	margin: 10px -20px 8px 23px;
 	font-size: .8rem;
 	font-weight: 500;
 }
@@ -259,6 +260,11 @@ button.btn:hover {
 	background: #ffffff0d;
 	border: 1px solid var(--main-color);
 	min-width: 90%;
+}
+
+button.viewmore:hover {
+	background: #7311a5;
+	border: 1px solid var(--main-color);
 }
 
 .card-jobs {
@@ -344,7 +350,7 @@ button.btn:hover {
 }
 
 section.jobs {
-	margin-bottom: 10rem;
+	margin-bottom: 11rem;
 }
 
 footer {
@@ -361,6 +367,9 @@ footer {
 	animation: animatex 4s cubic-bezier(0.51, 0.26, 0.57, 1) infinite;
 }
 
+.image-card .viewmore:hover {
+    min-width: 25%;
+}
 @keyframes animatex {
 	0% {
 		transform: rotateX(15deg);
