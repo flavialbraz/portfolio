@@ -354,13 +354,11 @@ section.jobs {
 }
 
 footer {
-	bottom: 0px;
-	background: #1c042838;
-	padding: 1rem 3rem;
-	display: flex;
-	justify-content: space-between;
-	position: relative;
-	z-index: 1;
+    width: 100%;
+    bottom: 0;
+    padding: 0.6rem 2rem;
+    background: #00000078;
+    text-align: center;
 }
 
 .img-who:before {
