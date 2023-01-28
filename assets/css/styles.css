@@ -299,6 +299,7 @@ button.viewmore:hover {
 	flex: 1;
 	position: relative;
 	z-index: 1;
+	color: #fff;
 }
 
 .card-jobs h3 {
