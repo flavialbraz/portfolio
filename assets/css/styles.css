@@ -8,6 +8,12 @@
 	--h3-size: 21px;
 }
 
+
+li {
+    list-style: none;
+}
+
+
 html {
 	scroll-behavior: smooth;
 }
@@ -143,11 +149,14 @@ header {
 }
 
 .img-who {
-	flex: 1;
+	flex: 1 1 21%;
+	position: relative;
 }
 
 .more-about-me {
-	flex: 1;
+	flex: 1 1 35%;
+	position: relative;
+	z-index: 111111;
 }
 
 .more-about-me h2, .sec-title h2 {
@@ -169,11 +178,11 @@ header {
 }
 
 .more-about-me p {
-	line-height: 32px;
-	margin-bottom: 2rem;
-	font-size: 1rem;
-	padding: 1rem 6rem 1rem 0rem;
-	text-align: left;
+    line-height: 28px;
+    margin-bottom: 2rem;
+    font-size: 0.91rem;
+    padding: 1rem 6rem 1.2rem 0rem;
+    text-align: left;
 }
 
 .social-m img {
@@ -202,13 +211,13 @@ header {
 }
 
 .card {
-	width: 32%;
-	border-radius: 5px;
-	margin-bottom: 0rem;
-	position: relative;
-	z-index: 1;
-	background: var(--card-bg);
-	border: var(--card-border);
+    flex: 1 1 30%;
+    border-radius: 5px;
+    margin-bottom: 0rem;
+    position: relative;
+    z-index: 1;
+    background: var(--card-bg);
+    border: var(--card-border);
 }
 
 .image-card {
@@ -226,33 +235,46 @@ header {
 .card-body h5 {
 	font-weight: 400;
 	font-size: .7rem;
-	color: #ffffff78;
+	color: #ffffffd1;
 	margin-bottom: .5rem;
+	line-height: 22px;
 }
 
 .card-body h3 {
 	font-size: var(--h3-size);
 	font-weight: 300;
 	margin-bottom: .2rem;
+	color: #fff;
 }
 
 .card-body p {
 	line-height: 21px;
 	display: block;
 	font-size: .80rem;
+	color: #ffffffab;
 }
 
 .image-card .viewmore {
-	position: relative;
-	bottom: -109px;
-	left: 0px;
-	opacity: 0;
-	padding: 0.8rem 0.8rem;
-	min-width: 25%;
-	margin: 10px -20px 8px 23px;
-	font-size: .8rem;
-	font-weight: 500;
+    position: relative;
+    bottom: -110px;
+    left: 15px;
+    opacity: 0;
+    padding: 0.8rem 0.8rem;
+    font-size: .8rem;
+    font-weight: 500;
+    background: var(--main-color);
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #0000;
+    margin: 7px 1px 3px 10px;
 }
+
+.image-card .viewmore:hover {
+    background: #110318ad;
+}
+
 
 .card:hover .image-card .viewmore {
 	opacity: 1;
@@ -261,6 +283,15 @@ header {
 
 .who {
 	margin-bottom: 9rem;
+	padding: 3rem;
+	border-radius: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+	padding-top: 6rem;
+	background: var(--card-bg);
+	border: var(--card-border);
 }
 
 .image-card img {
@@ -291,26 +322,47 @@ button.viewmore:hover {
 }
 
 .card-jobs {
-	background: var(--card-bg);
-	border: var(--card-border);
-	box-sizing: border-box;
-	border-radius: 9px;
-	padding: 1.5rem;
-	flex: 1;
-	position: relative;
-	z-index: 1;
-	color: #fff;
+    background: var(--card-bg);
+    border: var(--card-border);
+    box-sizing: border-box;
+    border-radius: 9px;
+    padding: 1.5rem;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    flex: 1 1 38%;
+} 
+
+.card-jobs span {
+    padding: 0.0rem 0.5rem;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: block;
+    width: max-content;
+    background: #ffffff0d;
 }
 
+.card-jobs:hover {
+    opacity: 0.6;
+    color: #fff;
+}
+
+
 .card-jobs h3 {
-	font-size: 1.24rem;
-	font-weight: 400;
-	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 0.3rem;
 }
 
 .card-jobs p {
 	line-height: 25px;
 	font-size: .9rem;
+	font-weight: 400;
 }
 
 .projects {
@@ -320,20 +372,14 @@ button.viewmore:hover {
 .img-who:before {
 	content: "";
 	background: url(../images/elements.svg) top right no-repeat;
-	width: 52%;
-	height: 547px;
+	width: 47rem;
+	height: 573px;
 	position: absolute;
-	right: 41px;
-	margin-top: -1rem;
+	right: -6rem;
+	top: -4rem;
 }
 
-.img-who img {
-	position: relative;
-	z-index: 111;
-	padding-top: 4rem;
-	padding-left: 2rem;
-	width: 72%;
-}
+.img-who img {position: relative;z-index: 11;width: 94%;}
 
 .image-card .viewmore:hover {
 	min-width: 39%;
@@ -343,18 +389,21 @@ button.viewmore:hover {
 	transform: scale(1.2);
 }
 
-.jobs:before {
+header:before {
 	margin-bottom: 10rem;
 	background: url(../images/gradient.svg) top left no-repeat;
 	content: "";
 	position: absolute;
-	left: 0px;
-	height: 627px;
+	left: -20rem;
+	height: 54rem;
 	width: 100%;
+	top: 0;
 }
 
 .container.top {
-	max-width: 1100px;
+    max-width: 1100px;
+    position: relative;
+    z-index: 111;
 }
 
 .sec-title {
@@ -380,9 +429,12 @@ section.jobs {
 footer {
     width: 100%;
     bottom: 0;
-    padding: 0.6rem 2rem;
-    background: #00000078;
+    padding: 30px;
     text-align: center;
+    position: relative;
+    z-index: 111;
+    background: var(--card-bg);
+    border: var(--card-border);
 }
 
 .img-who:before {
@@ -512,7 +564,26 @@ footer {
 		align-items: center;
 	}
 	.card {
-	width: 100%;
-}
+		width: 100%;
+	}
+	
+	.tecs li {
+		flex: 1;
+	}
+
+	.tecs {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	
+	header:before {
+		width: 100%;
+		left: 0;
+		background-size: cover;
+		opacity: 0.34;
+	}
+
 	
 }
